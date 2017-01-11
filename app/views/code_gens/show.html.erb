@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Table name:</strong>
+  <%= @code_gen.table_name %>
+</p>
+
+<p>
+  <strong>Package name:</strong>
+  <%= @code_gen.package_name %>
+</p>
+
+<p>
+  <strong>Project name:</strong>
+  <%= @code_gen.project_name %>
+</p>
+
+<%= link_to 'Edit', edit_code_gen_path(@code_gen) %> |
+<%= link_to 'Back', code_gens_path %>

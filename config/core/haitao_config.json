@@ -1,0 +1,39 @@
+{
+  // db配置
+  "db_host": "host",
+  "db_user": "user",
+  "db_password": "password",
+  "db_name": "dbname",
+  "db_port": 3306,
+  // db对象字段属性和java对象属性映射关系
+  "type_mapping": {
+    "BIGINT": "java.lang.Long",
+    "VARCHAR": "java.lang.String",
+    "INTEGER": "java.lang.Integer",
+    "DECIMAL": "java.math.BigDecimal",
+    "TINYINT": "java.lang.Integer",
+    "TIMESTAMP": "java.sql.Timestamp",
+    "FLOAT" : "java.lang.Float"
+  },
+  // db字段属性和mybatis里类型映射关系
+  "jdbc_type_mapping": {
+    "BIGINT": "DECIMAL",
+    "VARCHAR": "VARCHAR",
+    "INTEGER": "INTEGER",
+    "DECIMAL": "DECIMAL",
+    "TINYINT": "INTEGER",
+    "TIMESTAMP": "TIMESTAMP",
+    "FLOAT": "DECIMAL"
+  },
+  //  meta中不需要生成的db对象字段
+  "ignore_columns": [
+  ],
+  "db_method_mapping": {
+    "java.lang.Long": "getLong",
+    "java.lang.String": "getString",
+    "java.lang.Integer": "getInt",
+    "java.sql.Timestamp": "getTimestamp",
+    "java.math.BigDecimal": "getBigDecimal",
+    "java.lang.Float": "getFloat"
+  }
+}

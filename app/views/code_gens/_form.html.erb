@@ -1,0 +1,33 @@
+<%= form_for(@code_gen, :html => {:class => 'navbar-form'},) do |f| %>
+
+    <div class="row clearfix">
+
+      <div class="col-md-4 column">
+      </div>
+
+      <div class="col-md-6 column">
+        <div class="field">
+          <%= f.label :table_name %><br>
+          <%= f.text_field :table_name  %>
+        </div>
+        <div class="field">
+          <%= f.label :package_name %><br>
+          <%= f.text_field :package_name %>
+        </div>
+        <div class="field">
+          <%= f.label :project_name %><br>
+          <select class="form-control" name="code_gen[project_name]">
+            <option>haitao</option>
+            <option>supplier</option>
+          </select>
+        </div>
+        <div class="actions">
+          <%= f.submit "Generate", :class => 'btn' %>
+        </div>
+      </div>
+
+      <div class="col-md-4 column">
+      </div>
+    </div>
+
+<% end %>
