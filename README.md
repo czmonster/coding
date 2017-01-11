@@ -16,6 +16,17 @@ Ruby Rails搭建的一个web版代码生成工具。
 * 不影响原来的代码！原有的方式照样可以使用。
 * 模板不适用可以自己改代码，只要会一点[rbTenjin](http://www.kuwata-lab.com/tenjin/rbtenjin-users-guide.html)
 
+### 部署
+* linux && mysql && openresty
+
+```
+rails s -e production
+```
+只是顺便简单玩一下nginx...
+
+### 遗留问题
+* 用了rails的脚手架，需要依赖mysql。但是实际上这个工程里并没使用到。或许后面使用需要记录一些数据可以使用上，暂没去掉。
+* 前端界面简陋地可以，毕竟不是前端，将就用着。
 ## 最后
 讲一下思路：
 1. 连接数据库，根据表名获取相应的字段、类型等信息。
